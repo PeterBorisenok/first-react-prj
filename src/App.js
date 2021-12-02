@@ -14,12 +14,22 @@ import dislikeIcon from './assets/img/icon-dislike.svg'
 function App() {
   return (
     <div className="App">
-      <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image1} title="Hate speech vs free speech" />
-      <Headliner time="2:00 pm" dislikes="3.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image2} title="Ontario Liberal leadership" />
-      <Headliner time="2:00 pm" dislikes="1.1k" likes="20.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image3} title="Victim of Scarborough" />
-      <Headliner time="2:00 pm" dislikes="20k" likes="0" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="ABS NEWS" thumbnail={image4} title="Mother who left her baby" />
-      <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CW6 NEWS" thumbnail={image5} title="Mother of Stefanie Rengel" />
-      <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CNN NEWS" thumbnail={image6} title="World Cup: Popular items" />
+      <header className="header">Header</header>
+      <asside className="asside">Sidebar</asside>
+      <main className="main">
+        <section className="headliners">
+          <h2 className="block-title">Today’s Headlines</h2>
+          <div className="block-content">
+            <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image1} title="Hate speech vs free speech" />
+            <Headliner time="2:00 pm" dislikes="3.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image2} title="Ontario Liberal leadership" />
+            <Headliner time="2:00 pm" dislikes="1.1k" likes="20.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image3} title="Victim of Scarborough" />
+            <Headliner time="2:00 pm" dislikes="20k" likes="0" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="ABS NEWS" thumbnail={image4} title="Mother who left her baby" />
+            <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CW6 NEWS" thumbnail={image5} title="Mother of Stefanie Rengel" />
+            <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CNN NEWS" thumbnail={image6} title="World Cup: Popular items" />
+          </div>
+        </section>
+      </main>
+
     </div>
   );
 }
