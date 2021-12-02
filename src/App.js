@@ -9,17 +9,17 @@ import image5 from './assets/img/img5.jpg'
 import image6 from './assets/img/img6.jpg'
 import likeIcon from './assets/img/icon-like.svg'
 import dislikeIcon from './assets/img/icon-dislike.svg'
-import clockIcon from './assets/img/icon-clock.svg'
+
 
 function App() {
   return (
     <div className="App">
-      <Headliner clockIcon={clockIcon} dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image1} title="Hate speech vs free speech" />
-      <Headliner clockIcon={clockIcon} dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image2} title="Ontario Liberal leadership" />
-      <Headliner clockIcon={clockIcon} dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image3} title="Victim of Scarborough" />
-      <Headliner style={{color: "red", backgroundColor: "pink"}} clockIcon={clockIcon} dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="ABS NEWS" thumbnail={image4} title="Mother who left her baby" />
-      <Headliner clockIcon={clockIcon} dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CW6 NEWS" thumbnail={image5} title="Mother of Stefanie Rengel" />
-      <Headliner clockIcon={clockIcon} dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CNN NEWS" thumbnail={image6} title="World Cup: Popular items" />
+      <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image1} title="Hate speech vs free speech" />
+      <Headliner time="2:00 pm" dislikes="3.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image2} title="Ontario Liberal leadership" />
+      <Headliner time="2:00 pm" dislikes="1.1k" likes="20.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="BBS NEWS" thumbnail={image3} title="Victim of Scarborough" />
+      <Headliner time="2:00 pm" dislikes="20k" likes="0" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="ABS NEWS" thumbnail={image4} title="Mother who left her baby" />
+      <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CW6 NEWS" thumbnail={image5} title="Mother of Stefanie Rengel" />
+      <Headliner time="2:00 pm" dislikes="1.4k" likes="10.8k" dislikeIcon={dislikeIcon} likeIcon={likeIcon} labelText="CNN NEWS" thumbnail={image6} title="World Cup: Popular items" />
     </div>
   );
 }
